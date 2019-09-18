@@ -61,12 +61,12 @@ public class CourseServiceImpl implements CourseService
         newCourse.setCoursename(course.getCoursename());
         newCourse.setInstructor(course.getInstructor());
 
-        ArrayList<Student> newStudent = new ArrayList<>();
-        for (Student s : course.getStudents())
-        {
-            newStudent.add(new Student(s.getStudname()));
-        }
-        newCourse.setStudents(newStudent);
+//        ArrayList<Student> newStudent = new ArrayList<>();
+//        for (Student s : course.getStudents())
+//        {
+//            newStudent.add(new Student(s.getStudname()));
+//        }
+//        newCourse.setStudents(newStudent);
 
         return courserepos.save(newCourse);
     }
